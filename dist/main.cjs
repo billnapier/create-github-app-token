@@ -42607,7 +42607,7 @@ async function main(appId2, privateKey2, owner2, repositories2, permissions2, co
   }
 }
 async function getTokenFromOwner(request2, auth5, parsedOwner, permissions2) {
-  const response = await request2("GET /users/{username}/installation", {
+  const response = await request2("GET /enterprises/{username}/installation", {
     username: parsedOwner,
     request: {
       hook: auth5.hook
